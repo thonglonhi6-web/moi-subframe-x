@@ -1,0 +1,31 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"android": "2.2081"
+	},
+	"version": "v1.0.0",
+	"id": "moi.subframe",
+	"name": "MOI SUBFRAME",
+	"developer": "moi",
+	"description": "Input timing diagnostics for sub-frame (CBF-style) research. Pass-through only: never alters inputs.",
+	"settings": {
+		"diagnostics": {
+			"type": "bool",
+			"name": "Input diagnostics",
+			"description": "Measure when button events are applied inside a frame and flag duplicate / orphan / stuck inputs. Never changes input behavior. Also toggleable from the pause menu (SF: ON/OFF).",
+			"default": true
+		},
+		"log-each-event": {
+			"type": "bool",
+			"name": "Log every event",
+			"description": "Write each push/release to the Geode log (verbose).",
+			"default": false
+		},
+		"report-on-quit": {
+			"type": "bool",
+			"name": "Report on level exit",
+			"description": "Write a timing summary to the Geode log when leaving a level.",
+			"default": true
+		}
+	}
+}
